@@ -18,32 +18,6 @@ func connDB(connURL string) *sql.DB {
 	return db
 }
 
-// func main() {
-// 	// OrderDetails()
-
-// 	// db, err := config.GetDb()
-// 	// if err != nil {
-// 	// 	log.Fatal("Failed to connect DB", err)
-// 	// }
-// 	// defer db.Close()
-
-// 	// CREATE NEW TABLE
-// 	// createTable(db)
-
-// 	// INSERT SAMPLE DATA
-// 	// insertData(db)
-
-// 	// RETRIVE ORDER DETAILS FROM DATABASE
-// 	// orders, err := handler.GetOrderDetails(db)
-// 	// if err != nil {
-// 	// 	log.Fatal("Failed to retrive order details data :", err)
-// 	// }
-
-// 	// for _, o := range orders {
-// 	// 	fmt.Println(o.Id, o.FirstName, o.LastName, o.Position, o.TableNumber, o.Status)
-// 	// }
-// }
-
 func OrderDetails(connURL string) {
 	db := connDB(connURL)
 	defer db.Close()
