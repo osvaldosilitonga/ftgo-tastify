@@ -14,12 +14,14 @@ go mod tidy
 
 ## How to use
 
+Replace (urlStr) to you DB Url string. Ex. "username:password@tcp(host:port)/database"
+
 ### Retrive Order Detail
 
-Take order details from database
+Take order details from database.
 
 ```go
-cli.OrderDetails(ulrStr)
+cli.OrderDetails(urlStr)
 ```
 
 ### Create Table
